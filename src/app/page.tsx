@@ -77,12 +77,15 @@ export default function Home() {
               <span className="text-2xl font-semibold text-foreground mt-4 block text-center md:text-left">
                 - Let&apos;s Build Our Department Together!
               </span>
-              <button
-                className="relative mt-6 px-8 py-3 text-lg font-bold rounded-lg bg-gray-700 text-white overflow-hidden z-0 animated-border"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSev5HNyIA6DIC3EqShVl3pNT54a_xd440qISJ3PyKZpDb6yMw/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative mt-6 px-8 py-3 text-lg font-bold rounded-lg bg-gray-700 text-white overflow-hidden z-0 animated-border flex items-center justify-center"
                 style={{ isolation: "isolate" }}
               >
                 <span className="relative z-10">Click to Support!</span>
-              </button>
+              </a>
             </div>
           </div>
           {/* Right: Image */}
@@ -103,12 +106,15 @@ export default function Home() {
         </div>
         {/* Floating Support Button */}
         {showFloating && (
-          <button
-            className="fixed right-8 bottom-8 z-50 px-8 py-3 text-lg font-bold rounded-lg bg-gray-700 text-white overflow-hidden animated-border"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSev5HNyIA6DIC3EqShVl3pNT54a_xd440qISJ3PyKZpDb6yMw/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fixed right-8 bottom-8 z-50 px-8 py-3 text-lg font-bold rounded-lg bg-gray-700 text-white overflow-hidden animated-border flex items-center justify-center"
             style={{ isolation: "isolate" }}
           >
             <span className="relative z-10">Click to Support!</span>
-          </button>
+          </a>
         )}
         {/* Commitments Section */}
         <div className="mt-20 w-full flex justify-center">
