@@ -27,6 +27,24 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav
+          style={{ background: "#0094d4" }}
+          className="w-full text-foreground py-2 overflow-hidden relative flex items-center justify-center"
+        >
+          <div className="whitespace-nowrap animate-marquee font-bold text-lg text-center">
+            Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for
+            Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat
+            Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur
+            &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp;
+            Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for
+            Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat
+            Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur
+            &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp;
+            Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for
+            Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat
+            Kaur &nbsp; Vote for Harkirat Kaur
+          </div>
+        </nav>
         {children}
       </body>
     </html>

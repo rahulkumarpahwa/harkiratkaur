@@ -1,11 +1,60 @@
-@import "tailwindcss";
+/* Animated border for support button */
+.animated-border {
+  position: relative;
+  z-index: 0;
+}
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  padding: 4px;
+  background: linear-gradient(270deg, #ff0000, #0094d4, #8660c1, #384379, #ff0000, #0094d4, #8660c1, #384379);
+  background-size: 1200% 1200%;
+  z-index: -1;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: border-move 3s linear infinite;
+}
+.animated-border > span {
+  position: relative;
+  z-index: 1;
+}
+@keyframes border-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes border-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-border-move {
+  animation: border-move 3s linear infinite;
+  border-width: 4px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(270deg, #0094d4, #8660c1, #384379, #0094d4, #8660c1, #384379);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -20,7 +69,27 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(120deg, #8660c1 0%, #384379 50%, #0094d4 100%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-bg {
+  background: linear-gradient(120deg, #8660c1 0%, #0094d4 100%);
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
+}
+
+
+html,
+body {
+/* Hide both horizontal and vertical scrollbars /
+/* WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Firefox */
+scrollbar-width: none;
+  -ms-overflow-style: none;
 }
