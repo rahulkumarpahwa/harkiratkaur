@@ -75,7 +75,13 @@ export default function RootLayout({
           style={{ background: "#0094d4" }}
           className="w-full text-foreground py-2 overflow-hidden relative flex items-center justify-center"
         >
-          <div className="whitespace-nowrap animate-marquee font-bold text-lg text-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSev5HNyIA6DIC3EqShVl3pNT54a_xd440qISJ3PyKZpDb6yMw/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whitespace-nowrap animate-marquee font-bold text-lg text-center"
+            aria-label="Support Harkirat Kaur"
+          >
             Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for
             Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat
             Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur
@@ -87,7 +93,7 @@ export default function RootLayout({
             Vote for Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for
             Harkirat Kaur &nbsp; Vote for Harkirat Kaur &nbsp; Vote for Harkirat
             Kaur &nbsp; Vote for Harkirat Kaur
-          </div>
+          </a>
         </nav>
         {children}
       </body>

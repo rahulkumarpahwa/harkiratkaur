@@ -9,14 +9,21 @@ export default function OurPoster() {
         Our Poster
       </h2>
       <div className="w-full flex justify-center">
-        <Image
-          src="/poster.jpg"
-          alt="Our Poster"
-          width={500}
-          height={400}
-          className="rounded-2xl shadow-2xl object-contain"
-          priority
-        />
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSev5HNyIA6DIC3EqShVl3pNT54a_xd440qISJ3PyKZpDb6yMw/viewform?usp=dialog"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Support Harkirat Kaur via Poster"
+        >
+          <Image
+            src="/poster.jpg"
+            alt="Our Poster"
+            width={500}
+            height={400}
+            className="rounded-2xl shadow-2xl object-contain hover:opacity-80 transition-opacity"
+            priority
+          />
+        </a>
       </div>
     </section>
   );
