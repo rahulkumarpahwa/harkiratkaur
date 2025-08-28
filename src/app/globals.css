@@ -1,3 +1,16 @@
+@keyframes horizontal-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-horizontal-scroll {
+  animation: horizontal-scroll 40s linear infinite;
+  will-change: transform;
+}
 /* Animated border for support button */
 .animated-border {
   position: relative;
