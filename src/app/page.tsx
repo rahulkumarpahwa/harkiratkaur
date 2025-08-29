@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 import Vision from "@/components/Vision";
 import { useRef } from "react";
 import Card from "@/components/Card";
+
 import OurPoster from "@/components/OurPoster";
+import CoPoweredBy from "@/components/CoPoweredBy";
 
 import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
@@ -123,6 +125,10 @@ export default function Home() {
         {/* Our Poster Section */}
         <div className="mt-20 w-full flex justify-center">
           <OurPoster />
+        </div>
+        {/* Co Powered By Section */}
+        <div className="mt-10 w-full flex justify-center">
+          <CoPoweredBy />
         </div>
         {/* Get In Touch Section */}
         <div className="mt-20 w-full flex justify-center">
