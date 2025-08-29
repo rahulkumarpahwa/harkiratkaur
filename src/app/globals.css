@@ -8,7 +8,7 @@
 }
 
 .animate-horizontal-scroll {
-  animation: horizontal-scroll 40s linear infinite;
+  animation: horizontal-scroll 15s linear infinite;
   will-change: transform;
 }
 /* Animated border for support button */
